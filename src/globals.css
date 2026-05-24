@@ -1,0 +1,31 @@
+/* Vivian System Atlas — Global Tokens */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Noto+Sans+TC:wght@300;400&family=DM+Mono:wght@300;400&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --gold:   #C9A84C;
+  --gold2:  #E8C97A;
+  --teal:   #4ABFA8;
+  --blue:   #4A8BC4;
+  --purple: #8B6AC4;
+  --amber:  #C4824A;
+  --text1:  #EDE8DC;
+  --text2:  #A89878;
+  --text3:  #6A5E48;
+  --bg:     #010306;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* 響應式 mobile override */
+@media (max-width: 600px) {
+  html, body, #root { overflow: auto; }
+}
